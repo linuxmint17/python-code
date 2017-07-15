@@ -2,7 +2,16 @@
 'makeTextFile.py --create text file'
 import os
 ls=os.linesep
-
+#once read aline ended with .
+def getfilecontent():
+	mylines=[]
+	while True:
+		entry=raw_input('>: ')
+		if entry=='.':
+			break
+		else:
+			mylines.append(entry)
+	return mylines
 #get filename
 while True:
         try:
@@ -16,15 +25,7 @@ while True:
 	# 	print "ERROR:'%s' already exists" % fname
 	# else:
 	# 	break
-def getfilecontent():
-	mylines=[]
-	while True:
-		entry=raw_input('>: ')
-		if entry=='.':
-			break
-		else:
-			mylines.append(entry)
-	return mylines
+
 #use getfilecontent to get each line
 mylines=getfilecontent()
 
