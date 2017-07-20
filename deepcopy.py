@@ -1,10 +1,14 @@
 #!/usr/bin/env python2.7
+import copy
 person=['name',['saving',100.00]]
-hubby=person[:] # slice copy
-wifey=list(person) #fac func copy
+hubby=person
+wifey=copy.deepcopy(person)
+print [id(x) for x  in person,hubby,wifey]
+hubby[0]='joe'
+wifey[0]='jane'
 print hubby,wifey
-print [id(x) for x in person,hubby,wifey]
-print id(person[1][1]),id(hubby[1][1]),id(wifey[1][1])
-hubby[1][1]=50.00
-print hubby,wifey
+print [id(x) for x in hubby]
+print [id(x) for x  in  wifey]
+
+
 
