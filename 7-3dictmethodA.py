@@ -5,6 +5,6 @@ li.sort()
 print li
 for key in li:
     print " %s : %s"%(key,dict1[key]),
-
+teau
 
 
