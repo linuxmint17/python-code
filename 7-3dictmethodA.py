@@ -1,10 +1,12 @@
 #!/usr/bin/env  python2.7
-dict1={'hello':123,'jack':23,'bob':56,'suse':45}
+# -*- coding:utf-8 -*-
+dict1={'tiaottiaohu':1234,'hello':123,'jack':23,'bob':56,'suse':45}
 li=dict1.keys()
 li.sort()
-print li
-for key in li:
-    print " %s : %s"%(key,dict1[key]),
-teau
+# for key in li:
+#     print " %s : %s"%(key,dict1[key]),
 
+dict2=dict1
+li2=sorted(dict2.iteritems(),key=lambda t:t[1],reverse=True)
+print li2
 
