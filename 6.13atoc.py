@@ -2,9 +2,9 @@
 #-*- coding:utf-8 -*-
 'this script can get a complex number'
 from string import *
-symbl='+-'
-realp=[]
-imagp=[]
+symbl = '+-'
+realp = []
+imagp = []
 def atoc(instr):
 	rinstr=instr[::-1]
 	idx=0
@@ -17,5 +17,5 @@ def atoc(instr):
 	for i in range(idx,len(rinstr)):
 		if rinstr[i]!='+' and rinstr!='-':
 			realp.append(rinstr[i])
-	print realp
+	print(realp)
 atoc('+123+234j')

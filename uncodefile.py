@@ -17,4 +17,4 @@ bytes_in=f.read()
 f.close()
 hello_in=bytes_in.decode(CODEC)
 
-print hello_out
+print(hello_out)
