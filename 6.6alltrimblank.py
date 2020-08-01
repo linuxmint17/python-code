@@ -1,12 +1,11 @@
 #!/usr/bin/env python2.7
 # -*- coding:utf-8 -*-
-import string 
-Inputstring=raw_input('string please')
-Inputlist=list(Inputstring)
-newlist=[]
+Inputstring = input('string please')
+Inputlist = list(Inputstring)
+newlist = []
 for i in range(len(Inputlist)):
-	if Inputlist[i]!=' ':
+	if Inputlist[i] != ' ':
 		newlist.append(Inputlist[i])
-opstr=''
-outstring=opstr.join(newlist)
-print  outstring
+outputstr = ''
+outstring = outputstr.join(newlist)
+print(outstring)

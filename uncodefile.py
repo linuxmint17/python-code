@@ -10,7 +10,6 @@ hello_out=u"hello world\n"
 bytes_out=hello_out.encode(CODEC)
 f=open(FILE,'w')
 f.write(bytes_out)
-f.close()
 
 f=open(FILE,'r')
 bytes_in=f.read()

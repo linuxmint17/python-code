@@ -1,2 +1,2 @@
-# pythoncodes
-put exercise code on cloud
+# python3 codes
+Demonstrated python3 grammar or lib usage

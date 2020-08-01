@@ -6,12 +6,12 @@
 # for i in range(21):
 # 	if i%2!=0:
 # 		print i,
-num1=int(raw_input('enter an integer\n'))
-num2=int(raw_input('enter an integer\n'))
-if num1<num2:
-	num1,num2=num2,num1
+num1 = int(input('enter an integer\n'))
+num2 = int(input('enter an integer\n'))
+if num1 < num2:
+	num1 , num2 = num2 , num1
 
-if num1%num2==0:
-	print True
+if num1 % num2 == 0:
+	print(True)
 else:
-	print False
+	print(False)

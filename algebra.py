@@ -16,6 +16,6 @@ def algebra(inputstr):
 	if mylist[1]=='%':
 		return num1%num2
 
-inputstr=raw_input("enter a experssion like ' 1 + 2'\nseparate number and the operator with blank\n")
+inputstr = input("enter a experssion like ' 1 + 2'\nseparate number and the operator with blank\n")
 result=algebra(inputstr)
-print result
+print(result)

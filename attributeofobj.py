@@ -5,13 +5,13 @@ ls=os.linesep
 exists=os.path.exists
 condition=True
 while condition:
-	fname=raw_input('Enter item you would like to know\n Enter x to exists this program \n Check the attribute in file\n')
+	fname=input('Enter item you would like to know\n Enter x to exists this program \n Check the attribute in file\n')
 	if fname=='x' or fname=='X':
 		condition=False
 	if exists(fname):
-		print '%s already exist' % fname
-		print 'cover it or not (yes/no)'
-		flag=raw_input();
+		print('%s already exist' % fname)
+		print('cover it or not (yes/no)')
+		flag=input();
 		if flag=='no' or flag=='n':
 			break
 

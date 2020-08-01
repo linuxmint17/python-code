@@ -1,8 +1,8 @@
-#!/usr/bin/env python2.7
-userstring=raw_input('input a string please')
+#!/usr/bin/env python3
+userstring = input('input a string please\n')
 # for  char in userstring:
-# 	print char,
-i=0
-while i in NULrange(len(userstring)):
-	print userstring[i]
-	i+=1
+# 	print char
+i = 0
+while i in range(len(userstring)):
+	print(userstring[i])
+	i += 1
